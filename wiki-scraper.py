@@ -1,3 +1,4 @@
+#this is just to give you a jist of web scraping with Python
 import requests
 
 website_url=requests.get('https://en.wikipedia.org/wiki/List_of_Asian_countries_by_area').text
