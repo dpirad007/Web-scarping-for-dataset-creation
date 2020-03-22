@@ -3,7 +3,7 @@ import os
 import requests
 from selenium import webdriver
 
-driver_path=r'C:\Users\Dionp\Desktop\dataset creator\chromedriver.exe'
+driver_path=r'C:\Users\Dionp\Desktop\Projects\dataset creator\chromedriver.exe'
 
 wd =webdriver.Chrome(executable_path=driver_path)
 a=input("type your query: ")
@@ -45,10 +45,10 @@ for img in thumbnail_results[start:len(thumbnail_results)]:
 print(actualURL)
 
 
-
+folderName = input('Enter the directory name for storing the data: ')
 
 path=os.getcwd()
-path=path+'\dataset'
+path=path+'\{}'.format(folderName)
 try:
     os.mkdir(path)
 except:
